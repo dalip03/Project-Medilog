@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Welcome to Health Logger</title>
+ 
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+ <style>
+body, html {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  display:block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-img {
+  /* The image used */
+  background-image: url("loginBackground.jpg");
+   height: 100%;
+  	margin:0;
+  	padding:0;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+   background-attachment: fixed;
+  background-size: 100% 100%;  
+}
+
+/* Add styles to the form container */
+.container {
+  position: inline;
+  display: inline-block; 
+  text-align:left;
+  margin-left: auto;
+  margin-right: auto;
+  margin:5px;
+  max-width:600px; 
+  padding: 10px;
+  background-color: whitesmoke;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password], input[type=number], input[type=email] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+input[type=radio]{
+	padding:3px;
+	margin: 10px;
+	background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=number]:focus, input[type=email]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: #3389ff;
+  color: white;
+  padding: 16px 20px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+
+<div class="bg-img">
+	<center>
+		<h1 style="color:white; padding:15px;"><b>CREATE YOUR ACCOUNT HERE</b></h1>
+	</center>
+	
+		<form class="container" autocomplete="on" action="Register" method="post"
+		   oninput='txtPassword2.setCustomValidity(txtPassword2.value != txtPassword.value ? "Passwords do not match." : "")'
+		 >
+		<h1><b>SIGNUP</b></h1>
+		 <label for="name"><b>Enter Name:</b></label>
+			<input type="text" name="txtName" placeholder="eg. John Watson" required>
+		<label for="age"><b>Enter Age:</b></label>
+			<input type="number" name="txtAge" placeholder="Your age">
+		<label for="gender"><b>Select Gender:</b></label><br>
+			<input type="radio" id="male" name="gender" value="male"><label for="male">Male</label> 
+            <input type="radio" id="female" name="gender" value="female"><label for="female">Female</label>	
+            <input type="radio" id="other" name="gender" value="other"><label for="other">Other</label>	
+            <br>	
+		<label for="email"><b>Enter Email:</b></label>
+			<input type="email" name="txtEmail" placeholder="eg. john@example.com" required>
+		<label for="password"><b>Enter Password:</b></label>	
+			<input type="password" name="txtPassword" id="myPassword" placeholder="min 6 characters" required>
+		<label for="password"><b>Confirm Password:</b></label>
+			<input type="password" name="txtPassword2" id="myPassword2" placeholder="min 6 characters" required>
+				
+			<input type="checkbox" onclick="myFunction()">Show Password<br><br>
+			 
+			<button type="submit" class="btn">SIGNUP</button>
+			<button type="reset" class="btn">RESET</button>
+		</form>
+  
+</div>
+	
+<script>
+function myFunction() {
+  var x = document.getElementById("myPassword");
+  var y = document.getElementById("myPassword2");
+  if (x.type === "password" || y.type === "password") {
+    x.type = "text";
+    y.type = "text";
+  } else {
+    x.type = "password";
+    y.type = "password";
+  }
+}
+</script>
+
+	
+
+</body>
+</html>

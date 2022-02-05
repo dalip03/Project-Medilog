@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome to Medilog</title>
+  
+  <link rel="stylesheet" href="medilogindex.css">
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+  /* Make the image fully responsive */
+/*   .carousel-inner img {
+    width: 100%;
+    height: 10%;
+  }  */
+  
+   .carousel .item {
+  height: 400px;
+ 
+}
+
+.item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 400px;
+    
+} 
+
+footer {
+      background-color: #1a75ff;
+      padding: 25px;
+      color:rgb(255, 0, 0);
+    }
+  </style> 
+
+</head>
+<body>
+ <nav class="navbar  navbar-expand-md bg-dark navbar-dark fixed-top">
+  <a class="navbar-brand" href="#">Medilog</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="login.html">LOGIN</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="register.html">REGISTER</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">CONTACT US</a>
+      </li>
+    
+      <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        SERVICES
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="register.html">Add medicines</a>
+        <a class="dropdown-item" href="register.html">Search</a>
+      </div>
+    </li>  
+        
+    </ul>
+  </div>  
+</nav> 
+
+<!--  <div class="container-fluid mt-3">  -->
+ 
+ <!-- <div class="row">  -->
+  
+ <div id="demo" class="carousel slide carousel-fade " data-ride="carousel">
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="medicine-active.PNG" alt="Los Angeles" width="1520" height="300">
+      <div class="carousel-caption">
+        <h2>MEDILOG</h2>
+        <p><b>Site for your medicines management!</b></p>
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img src="carousle2.jpeg" alt="Chicago" width="1520" height="300">
+      <div class="carousel-caption">
+        <h2>ADD MEDICINES</h2>
+        <p><b>Add your medicines!</b></p>
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img src="carousle3.jpeg" alt="New York" width="1520" height="300">
+      <div class="carousel-caption">
+        <h2>SEARCH</h2>
+        <p><b>Search your added medicines!</b></p>
+      </div>   
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+<!-- </div> -->
+<!--  </div> 
+ -->
+
+
+	
+	
+	<!--  style="background-color:rgb(26, 163, 255); -->
+	
+		<!-- <div class="container-fluid pt-3 text-center"> -->
+		<div class="jumbotron text-white jumbotron-image shadow text-center" style="margin:5px;" >
+		<h1 style="color:black"><b>Welcome to Medilog</b></h1>
+		<p style="color:blue">***We take care of YOUR MEDICINES, along with YOU***</p>
+		<marquee style="font-size:22px; color:black"><p>Thank you!! for choosing Medilog for your Medicines Management</p></marquee>
+		 </div>
+		<br>
+	<!-- </div>  -->
+	<center>
+	<div class="container-fluid pt-3 text-center">
+		<img title="Medicines" src="cartoon-pills.jpg" alt="cartoon - pills" width="250" height="210">		
+			
+			<br><br>
+			<button type="button" class="btn btn-outline-primary btn-lg" onclick="document.location='login.html'"   title="LogIN">
+		LOGIN</button>
+			<button type="button" class="btn btn-outline-primary btn-lg"onclick="document.location='register.html'" title="SignUP">
+		SIGNUP</button>
+	</div>
+	</center>
+	
+	<br><br>
+	
+	  <section class="Section Section-left">
+        <div class="paras">
+        <p class="sectionTag text-big">The end of your search is here</p>
+        <p class="sectionSubTag text-small">It's tough to remember the name of your all medicines and their treatments So, 
+        		 Medilog's services include to provide you to log(or add) your medicines details in your account and whenever you need it in future, you just simply search it for 
+        		 on the basis of treatments, medicine name, expiry date or datetime etc.  
+          </p>
+         </div>
+        <div class="thumbnail">
+       <img src="https://source.unsplash.com/900x900/?medicines, pharmacy" alt="logo image" class="ImgFluid">
+   </div>
+    </section>
+    
+      <section class="Section">
+        <div class="paras">
+        <p class="sectionTag text-big">A perfect medicines management's  solution</p>
+        <p class="sectionSubTag text-small">Medilog is here to help to you to manage your medicines records by providing you the 
+        features for updating your medicines details, deleting any record  and searching on the basis of treatments, medicine name, date time or expiry date.
+        </p></div>
+        <div class="thumbnail">
+       <img src="https://source.unsplash.com/900x900/?medicines, pills, tablets" alt="logo image" class="ImgFluid">
+   </div>
+    </section><br><br>
+	
+	
+	
+	
+<footer class="container-fluid text-center">
+  <p>copyright &copy; Medilog 2021- All rights reserved</p>
+</footer>
+	
+<!-- 	
+	<div class="jumbotron text-center text-white jumbotron-image shadow" style="margin-bottom:0"> -->
+	<!-- </div>  -->
+
+</body>
+</html>
