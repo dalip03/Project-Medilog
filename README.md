@@ -41,6 +41,11 @@ Register Page for new User:-
 Home Page- User Interface with different options to add , edit, view , delete with easily.
 ![image](https://user-images.githubusercontent.com/54720172/152650104-6a52e2a3-faf1-49d9-a94d-6faef89c64a0.png)
 
+Add Medcine Details:- 
+![Screenshot 2022-02-05 223024](https://user-images.githubusercontent.com/54720172/152651122-b74c329b-d827-4a8e-82b5-e79b5c8b9f81.png)
+
+
 The user can Update or Delete your saved Data  with in no time digitally. The all operatons are done in mongoDB.
-![image](https://user-images.githubusercontent.com/54720172/152650173-edab5222-fb29-4d6b-900f-6c47792fc71d.png)
+![Screenshot 2022-02-05 223114](https://user-images.githubusercontent.com/54720172/152651102-94d6679b-d69e-4d97-98b4-ec6cb6065f37.png)
+
 
